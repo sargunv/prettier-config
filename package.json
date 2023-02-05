@@ -1,0 +1,43 @@
+{
+  "name": "@sargunv/prettier-config",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sargunv/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sargunv/prettier-config.git"
+  },
+  "license": "Apache-2.0",
+  "type": "commonjs",
+  "main": "index.cjs",
+  "files": [
+    "index.cjs"
+  ],
+  "scripts": {
+    "build": "true",
+    "configure": "yarn dlx @yarnpkg/sdks vscode && ignore-sync .",
+    "prepack": "run build",
+    "prepublish": "run style-check && run test",
+    "style-check": "prettier --check . --loglevel warn",
+    "style-fix": "prettier --write .",
+    "test": "true"
+  },
+  "prettier": "@sargunv/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "@sargunv/eslint-config"
+    ],
+    "root": true
+  },
+  "dependencies": {
+    "prettier-plugin-packagejson": "^2.4.2"
+  },
+  "devDependencies": {
+    "ignore-sync": "^6.0.2",
+    "prettier": "^2.8.3"
+  },
+  "peerDependencies": {
+    "prettier": "*"
+  },
+  "packageManager": "yarn@4.0.0-rc.38",
+  "langugaeName": "node"
+}
