@@ -4,22 +4,31 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Version"
+        description: Version
         required: true
+        type: choice
         options:
-          - "major"
-          - "minor"
-          - "patch"
+          - patch
+          - minor
+          - major
 
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
       - run: yarn install --immutable
-      - run: yarn version ${{ github.event.inputs.version }}
+      - run: yarn version -i '${{ github.event.inputs.version }}'
       - run: yarn npm publish
         env:
           YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: commit, tag, and push
+        run: |
+          git add package.json
+          version="$(node -p "require('./package.json').version")"
+          git config user.name "${{ github.actor }}"
+          git config user.email '${{ github.actor }}@users.noreply.github.com'
+          git commit -m "Release v$version"
+          git tag -a "v$version" -m "Release v$version"
+          git push --follow-tags
