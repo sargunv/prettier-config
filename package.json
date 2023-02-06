@@ -8,16 +8,16 @@
   },
   "license": "Apache-2.0",
   "type": "commonjs",
-  "main": "index.cjs",
+  "main": "index.js",
   "files": [
-    "index.cjs"
+    "./index.js"
   ],
   "scripts": {
     "build": "true",
     "configure": "yarn dlx @yarnpkg/sdks vscode && ignore-sync .",
     "prepack": "run build",
     "prepublish": "run style-check && run test",
-    "style-check": "eslint . && prettier --check . --loglevel warn",
+    "style-check": "eslint . && prettier --check .",
     "style-fix": "eslint . --fix && prettier --write .",
     "test": "true"
   },
