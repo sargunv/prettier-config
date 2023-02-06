@@ -1,4 +1,7 @@
-module.exports = {
+// @ts-check
+
+/** @type {import('prettier').Config} */
+const config = {
   plugins: [require.resolve(`prettier-plugin-packagejson`)],
   htmlWhitespaceSensitivity: `ignore`,
   proseWrap: `always`,
@@ -8,3 +11,5 @@ module.exports = {
   trailingComma: `all`,
   vueIndentScriptAndStyle: true,
 }
+
+module.exports = config
