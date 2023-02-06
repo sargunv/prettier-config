@@ -17,8 +17,8 @@
     "configure": "yarn dlx @yarnpkg/sdks vscode && ignore-sync .",
     "prepack": "run build",
     "prepublish": "run style-check && run test",
-    "style-check": "prettier --check . --loglevel warn",
-    "style-fix": "prettier --write .",
+    "style-check": "eslint . && prettier --check . --loglevel warn",
+    "style-fix": "eslint . --fix && prettier --write .",
     "test": "true"
   },
   "prettier": "@sargunv/prettier-config",
@@ -32,6 +32,10 @@
     "prettier-plugin-packagejson": "^2.4.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@sargunv/eslint-config": "^0.2.0",
+    "eslint": "^8.33.0",
     "ignore-sync": "^6.0.2",
     "prettier": "^2.8.3"
   },
