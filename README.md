@@ -1,4 +1,4 @@
-[![npm badge](https://img.shields.io/npm/v/@sargunv/prettier-config)](https://www.npmjs.com/package/@sargunv/prettier-config)
+[![NPM](https://img.shields.io/npm/v/@sargunv/prettier-config)](https://www.npmjs.com/package/@sargunv/prettier-config)
 
 # @sargunv/prettier-config
 
