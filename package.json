@@ -32,7 +32,7 @@
   "devDependencies": {
     "@sargunv/eslint-config": "^0.5.4",
     "@sargunv/typescript-config": "^0.2.0",
-    "@types/node": "^18.13.0",
+    "@types/node": "^18.14.0",
     "@types/prettier": "^2.7.2",
     "eslint": "^8.34.0",
     "ignore-sync": "^6.0.2",
