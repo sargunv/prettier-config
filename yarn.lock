@@ -207,7 +207,7 @@ __metadata:
     ignore-sync: "npm:^6.0.2"
     prettier: "npm:^2.8.4"
     prettier-plugin-packagejson: "npm:^2.4.3"
-    typescript: "npm:^4.9.5"
+    typescript: "npm:^5.0.3"
   peerDependencies:
     prettier: "*"
   languageName: unknown
@@ -3121,23 +3121,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.9.5":
-  version: 4.9.5
-  resolution: "typescript@npm:4.9.5"
+"typescript@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "typescript@npm:5.0.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 550217a465c00b1d7ef0e0ddc3a6a0b2ae1fd7c1b9f53cde5a1cfe56aa457c7a43fa83792c1b98b2185d2156d0467c9ad6f6600515ad4f4fc2acee54c4bd320e
+  checksum: 45ee631503499861d77d7a7b1d49fb5c62ae6bb5a99cdf5110f3e21c627397f5f76cf3d67ee0b223a33cfad469ea18de7650cab7a529b1376f5218a27b81671e
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^4.9.5#optional!builtin<compat/typescript>":
-  version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=23ec76"
+"typescript@patch:typescript@npm%3A^5.0.3#optional!builtin<compat/typescript>":
+  version: 5.0.3
+  resolution: "typescript@patch:typescript@npm%3A5.0.3#optional!builtin<compat/typescript>::version=5.0.3&hash=1f5320"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 09f82f25664c79d5cccc389502175093becf51d691b443c79294303681544a399fb42f8384b535ddeba48cadb64e7d14b42de40d8ade4418bb43174989dd8685
+  checksum: b7877c1596dcddd821ef3b6da12c4b29950bcaa5ab313a9fd20f78ac672be01964431f0cbe5fcfef8ac4d1606629b7a9c493e0b52090139fb77addc37abce542
   languageName: node
   linkType: hard
 
