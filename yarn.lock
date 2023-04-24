@@ -201,7 +201,7 @@ __metadata:
   dependencies:
     "@sargunv/eslint-config": "npm:^0.5.4"
     "@sargunv/typescript-config": "npm:^0.2.0"
-    "@types/node": "npm:^18.14.2"
+    "@types/node": "npm:^18.16.0"
     "@types/prettier": "npm:^2.7.2"
     eslint: "npm:^8.35.0"
     ignore-sync: "npm:^6.0.2"
@@ -236,10 +236,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.14.2":
-  version: 18.14.2
-  resolution: "@types/node@npm:18.14.2"
-  checksum: 129305df2c8e761c22cfa7a88ab780577864c8fc53a5b70cabbe4dd595e4b38b211b73a4380d0a18bf5da3634081bfa554cccf52dfd5e228e7a27de12c857aaf
+"@types/node@npm:^18.16.0":
+  version: 18.16.0
+  resolution: "@types/node@npm:18.16.0"
+  checksum: e2a407946adcc00c72f05cad85e57b14e8ae615eedcf834daa39186bf7ff136c802519504c391cc8f3b6935726e6ada1ef1dd1546d5c88d0051185f6dc41dd07
   languageName: node
   linkType: hard
 
