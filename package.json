@@ -15,7 +15,7 @@
   "scripts": {
     "configure": "yarn dlx @yarnpkg/sdks vscode && ignore-sync .",
     "fix": "eslint . --fix && prettier --write .",
-    "lint": "tsc --noEmit && eslint . && prettier --check . --loglevel warn"
+    "lint": "tsc --noEmit && eslint . && prettier --check . --log-level warn"
   },
   "prettier": "@sargunv/prettier-config",
   "eslintConfig": {
@@ -27,22 +27,22 @@
     "root": true
   },
   "dependencies": {
-    "prettier-plugin-packagejson": "^2.4.3"
+    "prettier-plugin-packagejson": "^2.4.9"
   },
   "devDependencies": {
     "@sargunv/eslint-config": "^0.5.4",
     "@sargunv/typescript-config": "^0.2.0",
-    "@types/node": "^18.14.2",
-    "@types/prettier": "^2.7.2",
+    "@types/node": "^20.11.0",
+    "@types/prettier": "^3.0.0",
     "eslint": "^8.35.0",
-    "ignore-sync": "^6.0.2",
-    "prettier": "^2.8.4",
+    "ignore-sync": "^7.0.1",
+    "prettier": "^3.2.2",
     "typescript": "^4.9.5"
   },
   "peerDependencies": {
     "prettier": "*"
   },
-  "packageManager": "yarn@4.0.0-rc.39",
+  "packageManager": "yarn@4.0.2",
   "languageName": "node",
   "publishConfig": {
     "access": "public"
